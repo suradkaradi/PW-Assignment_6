@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Q1.css">
+
+    <!-- Internal  CSS  -->
+    <style>
+      .internal {
+        color: green;
+      }
+      .inline__internal {
+        color: red;
+      }
+      .internal__ext {
+        color: brown;
+      }
+      .inline__internal__external {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="color: rgb(7, 198, 105)">Inline</div>
+    <div class="internal">Internal</div>
+    <div class="external">External</div>
+    <div style="color: rgb(190, 125, 252)" class="inline__internal">
+      Inline + Internal
+    </div>
+    <div class="int__external internal__ext">Internal + External</div>
+    <div style="color: rgb(156, 221, 128)" class="inline__internal__external">
+      Inline + Internal + External
+    </div>
+  </body>
+</html>
